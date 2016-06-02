@@ -7,9 +7,6 @@ class Object(object):
     """
     __doc__ = "None"
     
-    def __call__(self):
-        return None
-    
     def __getattr__(self, name):
         time.sleep(random.random() * 10)
         raise OSError("Python encountered a problem. "
